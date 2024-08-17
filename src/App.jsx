@@ -2,12 +2,14 @@
 import { useState } from 'react';
 import React from 'react';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [cart, setCart] = useState({});
   const [count, setCount] = useState(0);
   
-  const products = ['prd1', 'prd2', 'prd3', 'prd4', 'prd5', 'prd6'];
+  const products = ['prd1', 'prd2', 'prd3', 'prd4', 'prd5', 'prd6','prd7','prd8'];
 
   const handleClick = (productId) => {
     setCart(prevCart => {
@@ -32,16 +34,23 @@ function App() {
       <div>
         <nav className="navbar">
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" >Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Shop </a></li>
-            <li><button>cart {count}</button></li>
+            
+          </ul>
+          <ul>
+          <li><button>
+          <FontAwesomeIcon icon={faShoppingCart} />
+          <span> Cart {count} </span>
+            </button></li>
           </ul>
         </nav>
       </div>
-      <div>
+
+      <div className='banAdd'>
         <h1>Shop in style</h1>
-        <h4>with this shophomepage template</h4>
+        <p>with this shophomepage template</p>
       </div>
 
       <div className='container'>
@@ -53,6 +62,7 @@ function App() {
           </div>
         ))}
       </div>
+
     </>
   );
 }

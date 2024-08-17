@@ -1,7 +1,7 @@
 #root {
- width: 100%;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem;
   text-align: center;
 }
 
@@ -11,6 +11,7 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -18,13 +19,11 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-
-
-/* App.css */
-
-/* Basic styling for the navigation bar */
 .navbar {
-  background-color: #282c34;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 500px;
+  background-color: #dbdfe8;
   padding: 1rem;
 }
 
@@ -41,10 +40,11 @@
 }
 
 .navbar a {
-  color: #61dafb;
+  color: #090b0b;
   text-decoration: none;
   font-size: 1.2rem;
 }
+
 
 .navbar a:hover {
   text-decoration: underline;
@@ -58,7 +58,7 @@
   margin: 1rem;
   background-color: #f0f0f0;
   height: 80px;
-  border : 1px solid black;
+  border : 1px solid rgb(198, 180, 180);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-basis: 44.44444 ;
@@ -71,10 +71,15 @@
 
 button {
   font-size: 1.2rem;
-  padding: 0.5rem 1rem;
+  padding: 15px;
   cursor: pointer;
 }
 
+.banAdd {
+  background-color: #212529;
+  color: white;
+  padding: 10px 10px;
+}
 
 
 
